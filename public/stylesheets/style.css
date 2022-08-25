@@ -1,0 +1,278 @@
+:root {
+    --maincolor1: white;
+    --maincolor2: rgb(255, 0, 0);
+    --maincolor3: rgb(80, 185, 255);
+    --maincolor4: rgb(0, 195, 140);
+    --maincolor5: rgba(152, 214, 255, 0.822);
+    --maincolor6: rgba(0, 175, 87, 0.822);
+    --maincolor7: rgba(0, 220, 195, 0.849);
+    --maincolor8: rgb(238, 238, 238);
+    --maincolor9: rgb(182, 3, 3);
+    --maincolor10:rgba(170, 170, 170, 0.801);
+    --maincolor11: rgb(1, 85, 141);
+    --maincolor12: rgba(184, 227, 255, 0.637);
+    --standardfontstyle1: bold;
+    --standardfontstyle2: italic;
+    --standardborderradius: 5px; 
+}
+
+*  {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--maincolor3);
+    color: var(--maincolor2);
+}
+
+main, .site-name {
+    background-color: var(--maincolor3);
+}
+
+a, .btn-no-style, #comment-subtitle {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover, .btn-no-style:hover {
+    text-decoration: none;
+    color: var(--maincolor4);
+}
+
+a:hover, .btn-no-style:active {
+    text-decoration: none;
+    color: var(--maincolor5);
+}
+
+a:hover, .btn-no-style:visited {
+    text-decoration: none;
+    color: var(--maincolor4);
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    font-weight: var(--standardfontstyle1);
+    transition: color .1s;
+}
+
+button {
+    background-color: var(--maincolor5);
+    border: 0;
+    padding: 1%;
+    color: var(--maincolor1);
+    font-weight: var(--standardfontstyle1);
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: var(--standardborderradius);
+}
+
+button:hover {
+    background-color: var(--maincolor6);
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.go-back {
+    color: var(--maincolor7);
+}
+
+textarea, input {
+    padding: .5%;
+    border-radius: var(--standardborderradius);
+    border: 1px solid var(--maincolor1);
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid var(--maincolor8);
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+form > div {
+    margin-bottom: 2%;
+}
+
+form label {
+    color: var(--maincolor4);
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header, .site-row, .info-section, .form-heading {
+    background-color: var(--maincolor6);
+}
+
+.login-page, .sign-in-page, .new-form-page, .edit-form-page {
+    border: 3px solid var(--maincolor4);
+}
+
+.form-heading {
+    padding: 10px;
+}
+
+.info-section, .content-section, .form-section, .sign-in-link, .login-link {
+    padding-left: 10px;
+}
+
+.post-name, .post-title-section, .new-page {
+    padding-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+header h1 {
+    color: var(--maincolor4);
+    font-size: 1em; 
+}
+
+.site-row {
+    display: flex;
+    justify-content: center;
+}
+
+.site-name {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border-style: double;
+    color: var(--maincolor4);
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: var(--standardfontstyle1);
+    transition: color .1s;
+    margin-left: 16px;
+}
+
+.btn-no-style:hover {
+    background: none;
+}
+
+.delete-post-btn {
+    background-color: var(--maincolor9);
+}
+
+.delete-post-btn:hover {
+    background-color: var(--maincolor10);
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border: 3px solid var(--maincolor2);
+}
+
+.post .title span {
+    font-style: var(--standardfontstyle2);
+    font-size: 90%;
+    color: var(--maincolor11);
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+    color: var(--maincolor7);
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: var(--maincolor12);
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.new-post-form input {
+    width: 300px; 
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+#comment-subtitle {
+    font-size: 12px;
+    font-style: var(--standardfontstyle2);
+}
+
+.new-post-section {
+    display: flex;
+    justify-content: center;
+}
+
+#create-new-post {
+    width: 15%;
+}
+
+.sign-in-link, .login-link {
+    color: var(--maincolor4);
+}
+
+.form-heading h1, .form-heading h2 {
+    color: var(--maincolor4);
+}
+
+.login-form, .signup-form, .post-content, .post-title-section {
+    padding: 10px 10px 0px 0px;
+}
+
+.entry-field, .login-signup-btn, .btn, #post-title {
+    width: 100%;
+}
